@@ -1,109 +1,95 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-  
-
-* {
+body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
-} 
+    background-color: #f0f0f0;
+}
 
 .container {
-    max-width: 600px;
+    max-width: 800px;
     margin: 20px auto;
+    background-color: #fff;
     padding: 20px;
-    gap: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.container button {
-    width: 120px;
+h2 {
+    color: #333;
 }
 
+p {
+    color: #666;
+}
 
 .row {
-    display: flex;
-    flex-direction: row;
-}
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 20px;
-}
-
-fieldset label {
-    font-weight: 400;
-    font-size: 16px;
-    margin-left: 4px;
-    margin-top: 4px;
-}
-
-label {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-right: 12px;
+    margin-bottom: 10px;
 }
 
 legend {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-right: 12px;
+    font-weight: bold;
 }
 
-.required::after {
-    content: "*";
-    color: red;
-    position: absolute;
-    margin-left: 5px;
+input[type="text"],
+input[type="radio"],
+input[type="checkbox"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.page_number {
     font-size: 12px;
+    color: #999;
 }
 
 .tooltip {
     position: relative;
     display: inline-block;
-    margin-left: 25px;
 }
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 200px;
+    width: 120px;
     background-color: #333;
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 15px;
+    padding: 5px;
     position: absolute;
     z-index: 1;
-    top: 100%;
+    bottom: 125%;
     left: 50%;
-    margin-left: -100px;
+    margin-left: -60px;
 }
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
 
-
-fieldset {
-    border: none;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
+.fontawesome {
+    font-size: 20px;
+    color: #333;
 }
 
-img {
-    width: 100%;
-}
-
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-        margin: 10px auto;
-    }
+.tooltip .fa-circle-info {
+    color: #007bff;
 }
